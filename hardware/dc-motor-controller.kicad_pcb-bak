@@ -3,9 +3,9 @@
   (general
     (links 70)
     (no_connects 0)
-    (area 99.54 95.67412 144.000002 176.500002)
+    (area 0 0 0 0)
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 362)
     (zones 0)
     (modules 30)
@@ -58,7 +58,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x00000_80000000)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -79,9 +79,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory production-files/))
   )
 
   (net 0 "")
@@ -1022,6 +1022,11 @@
     (fp_circle (center 0 0) (end 2.5 0) (layer Cmts.User) (width 0.381))
     (pad 1 thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.5) (layers))
   )
+
+  (gr_line (start 96.25 177.75) (end 96.25 92.75) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 148.5 177.75) (end 96.25 177.75) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 148.5 92.75) (end 148.5 177.75) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 96.25 92.75) (end 148 92.75) (angle 90) (layer Edge.Cuts) (width 0.15))
 
   (via (at 129.2 138) (size 1.6) (drill 1) (layers F.Cu B.Cu) (net 1))
   (segment (start 124.7775 152.0825) (end 127.0825 152.0825) (width 1) (layer B.Cu) (net 1) (tstamp 574C537B))
