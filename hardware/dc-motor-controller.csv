@@ -1,0 +1,15 @@
+"Id";"Designator";"Kotelo";"Lukumäärä";"Merkintä";"Supplier and ref";
+1;"IC1";"DIP-28_W7.62mm";1;"ATMEGA88PA-P";;;
+2;"R1";"Resistor_Vertical_RM5mm";1;"1 k";;;
+3;"C1,C3";"C_Rect_L7_W2.5_P5";2;"100 nF";;;
+4;"C2";"C_Radial_D5_L6_P2.5";1;"1 uF";;;
+5;"C4,C5,C6,C7,C8,C9";"C_Rect_L7_W2.5_P5";6;"10 nF";;;
+6;"D1";"LED-3MM";1;"LED";;;
+7;"M1,M2,M3";"Big_green_chocolade_1x2";3;"DC_motor";;;
+8;"P1";"Socket_Strip_Straight_1x02";1;"Power connector";;;
+9;"P2";"Pin_Header_Straight_2x03";1;"ISP interface";;;
+10;"R2,R3,R4,R5,R6,R7";"Resistor_Vertical_RM5mm";6;"10 k";;;
+11;"SW1,SW2,SW3,SW4,SW5,SW6";"Small_green_chocolade_1x2";6;"SW_PUSH";;;
+12;"U2,U3,U4";"SIP9_Housing";3;"BA6956AN";;;
+13;"U1";"TO-220_Neutral123_Vertical";1;"7805";;;
+14;"REF**,REF**,REF**,REF**";"1pin";4;"1pin";;;
