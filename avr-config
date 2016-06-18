@@ -1,0 +1,5 @@
+projectName=dc-motor-controller
+sourceDir=src
+targetDir=target
+mcu=atmega88p
+programmer=arduinoisp
