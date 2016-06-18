@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:dc-motor-controller-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -67,12 +68,12 @@ F 3 "" H 5500 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M1
+L DC_motor-RESCUE-dc-motor-controller M1
 U 1 1 5739C18C
 P 7650 1150
 F 0 "M1" H 7650 1400 60  0000 C CNN
 F 1 "DC_motor" H 7650 1550 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 1400 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 1400 60  0001 C CNN
 F 3 "" H 7650 1400 60  0000 C CNN
 	1    7650 1150
 	0    1    1    0   
@@ -166,12 +167,12 @@ F 3 "" H 5500 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M2
+L DC_motor-RESCUE-dc-motor-controller M2
 U 1 1 5739CBCB
 P 7650 3350
 F 0 "M2" H 7650 3600 60  0000 C CNN
 F 1 "DC_motor" H 7650 3750 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 3600 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 3600 60  0001 C CNN
 F 3 "" H 7650 3600 60  0000 C CNN
 	1    7650 3350
 	0    1    1    0   
@@ -254,12 +255,12 @@ F 3 "" H 5500 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M3
+L DC_motor-RESCUE-dc-motor-controller M3
 U 1 1 5739CE17
 P 7650 5450
 F 0 "M3" H 7650 5700 60  0000 C CNN
 F 1 "DC_motor" H 7650 5850 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 5700 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 5700 60  0001 C CNN
 F 3 "" H 7650 5700 60  0000 C CNN
 	1    7650 5450
 	0    1    1    0   
@@ -347,7 +348,7 @@ U 1 1 573AFB8D
 P 3350 2900
 F 0 "R1" V 3430 2900 50  0000 C CNN
 F 1 "1 k" V 3350 2900 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3280 2900 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3280 2900 50  0001 C CNN
 F 3 "" H 3350 2900 50  0000 C CNN
 	1    3350 2900
 	0    1    1    0   
@@ -589,7 +590,7 @@ U 1 1 57404E3E
 P 1950 1600
 F 0 "P1" H 1950 1750 50  0000 C CNN
 F 1 "Power connector" V 2050 1600 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1950 1600 50  0001 C CNN
+F 2 "Oturpe footprints:Small_green_chocolade_1x2" H 1950 1600 50  0001 C CNN
 F 3 "" H 1950 1600 50  0000 C CNN
 	1    1950 1600
 	-1   0    0    1   
@@ -600,7 +601,7 @@ U 1 1 5740639A
 P 4450 4300
 F 0 "P2" H 4450 4500 50  0000 C CNN
 F 1 "ISP interface" H 4450 4100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 4450 3100 50  0001 C CNN
+F 2 "Oturpe footprints:Borg_hedged_2x03" H 4450 3100 50  0001 C CNN
 F 3 "" H 4450 3100 50  0000 C CNN
 	1    4450 4300
 	1    0    0    -1  

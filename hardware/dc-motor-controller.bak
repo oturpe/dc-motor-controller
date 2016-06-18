@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:dc-motor-controller-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -67,12 +68,12 @@ F 3 "" H 5500 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M1
+L DC_motor-RESCUE-dc-motor-controller M1
 U 1 1 5739C18C
 P 7650 1150
 F 0 "M1" H 7650 1400 60  0000 C CNN
 F 1 "DC_motor" H 7650 1550 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 1400 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 1400 60  0001 C CNN
 F 3 "" H 7650 1400 60  0000 C CNN
 	1    7650 1150
 	0    1    1    0   
@@ -166,12 +167,12 @@ F 3 "" H 5500 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M2
+L DC_motor-RESCUE-dc-motor-controller M2
 U 1 1 5739CBCB
 P 7650 3350
 F 0 "M2" H 7650 3600 60  0000 C CNN
 F 1 "DC_motor" H 7650 3750 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 3600 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 3600 60  0001 C CNN
 F 3 "" H 7650 3600 60  0000 C CNN
 	1    7650 3350
 	0    1    1    0   
@@ -254,12 +255,12 @@ F 3 "" H 5500 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC_motor M3
+L DC_motor-RESCUE-dc-motor-controller M3
 U 1 1 5739CE17
 P 7650 5450
 F 0 "M3" H 7650 5700 60  0000 C CNN
 F 1 "DC_motor" H 7650 5850 60  0001 C CNN
-F 2 "Oturpe footprints:Big_green_chocolade_1x2" H 7650 5700 60  0001 C CNN
+F 2 "Oturpe footprints:Big_green_chocolate_1x2" H 7650 5700 60  0001 C CNN
 F 3 "" H 7650 5700 60  0000 C CNN
 	1    7650 5450
 	0    1    1    0   
@@ -589,7 +590,7 @@ U 1 1 57404E3E
 P 1950 1600
 F 0 "P1" H 1950 1750 50  0000 C CNN
 F 1 "Power connector" V 2050 1600 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1950 1600 50  0001 C CNN
+F 2 "Oturpe footprints:Small_green_chocolade_1x2" H 1950 1600 50  0001 C CNN
 F 3 "" H 1950 1600 50  0000 C CNN
 	1    1950 1600
 	-1   0    0    1   
@@ -600,7 +601,7 @@ U 1 1 5740639A
 P 4450 4300
 F 0 "P2" H 4450 4500 50  0000 C CNN
 F 1 "ISP interface" H 4450 4100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 4450 3100 50  0001 C CNN
+F 2 "Oturpe footprints:Borg_hedged_2x03" H 4450 3100 50  0001 C CNN
 F 3 "" H 4450 3100 50  0000 C CNN
 	1    4450 4300
 	1    0    0    -1  
@@ -636,6 +637,47 @@ F 1 "GND" H 5500 5150 50  0000 C CNN
 F 2 "" H 5500 5300 50  0000 C CNN
 F 3 "" H 5500 5300 50  0000 C CNN
 	1    5500 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 4050
+NoConn ~ 3650 4150
+NoConn ~ 3650 4250
+NoConn ~ 3650 4350
+NoConn ~ 3650 4450
+NoConn ~ 3650 4550
+NoConn ~ 3650 5000
+NoConn ~ 1750 3800
+$Comp
+L PWR_FLAG #FLG030
+U 1 1 57427172
+P 2150 1550
+F 0 "#FLG030" H 2150 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 1730 50  0000 C CNN
+F 2 "" H 2150 1550 50  0000 C CNN
+F 3 "" H 2150 1550 50  0000 C CNN
+	1    2150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG031
+U 1 1 574325F0
+P 2150 1850
+F 0 "#FLG031" H 2150 1945 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 2030 50  0000 C CNN
+F 2 "" H 2150 1850 50  0000 C CNN
+F 3 "" H 2150 1850 50  0000 C CNN
+	1    2150 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L 7805_oturpe U1
+U 1 1 574C5798
+P 2850 1600
+F 0 "U1" H 3000 1404 50  0000 C CNN
+F 1 "7805" H 2850 1800 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 2850 1600 50  0001 C CNN
+F 3 "" H 2850 1600 50  0000 C CNN
+	1    2850 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -779,53 +821,12 @@ Wire Wire Line
 Wire Wire Line
 	4800 4300 4800 3500
 Connection ~ 4800 3500
-NoConn ~ 3650 4050
-NoConn ~ 3650 4150
-NoConn ~ 3650 4250
-NoConn ~ 3650 4350
-NoConn ~ 3650 4450
-NoConn ~ 3650 4550
-NoConn ~ 3650 5000
-NoConn ~ 1750 3800
-$Comp
-L PWR_FLAG #FLG030
-U 1 1 57427172
-P 2150 1550
-F 0 "#FLG030" H 2150 1645 50  0001 C CNN
-F 1 "PWR_FLAG" H 2150 1730 50  0000 C CNN
-F 2 "" H 2150 1550 50  0000 C CNN
-F 3 "" H 2150 1550 50  0000 C CNN
-	1    2150 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7100 5450 7300 5450
 Wire Wire Line
 	7300 3350 7100 3350
-$Comp
-L PWR_FLAG #FLG031
-U 1 1 574325F0
-P 2150 1850
-F 0 "#FLG031" H 2150 1945 50  0001 C CNN
-F 1 "PWR_FLAG" H 2150 2030 50  0000 C CNN
-F 2 "" H 2150 1850 50  0000 C CNN
-F 3 "" H 2150 1850 50  0000 C CNN
-	1    2150 1850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1750 3500 1750 3200
-$Comp
-L 7805_oturpe U1
-U 1 1 574C5798
-P 2850 1600
-F 0 "U1" H 3000 1404 50  0000 C CNN
-F 1 "7805" H 2850 1800 50  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 2850 1600 50  0001 C CNN
-F 3 "" H 2850 1600 50  0000 C CNN
-	1    2850 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 5500 3950 5500
 Wire Wire Line
