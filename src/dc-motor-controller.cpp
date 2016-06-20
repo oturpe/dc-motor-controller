@@ -210,7 +210,7 @@ void controlMotor1(bool clockwiseEnd, bool counterClockwiseEnd) {
 /// \brief
 ///    Sets motor 2 rotation according to given switch press information.
 ///
-/// See controlMotor2() function documentation for details. This function
+/// See controlMotor1() function documentation for details. This function
 /// behaves identically to that one.
 void controlMotor2(bool clockwiseEnd, bool counterClockwiseEnd) {
     static uint8_t forwardTarget = MOTOR_2_SPEED;
@@ -238,7 +238,7 @@ void controlMotor2(bool clockwiseEnd, bool counterClockwiseEnd) {
 /// \brief
 ///    Sets motor 3 rotation according to given switch press information.
 ///
-/// See controlMotor3() function documentation for details. This function
+/// See controlMotor1() function documentation for details. This function
 /// behaves identically to that one.
 void controlMotor3(bool clockwiseEnd, bool counterClockwiseEnd) {
     static uint8_t forwardTarget = MOTOR_3_SPEED;
