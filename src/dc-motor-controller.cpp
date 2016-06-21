@@ -14,8 +14,6 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-uint32_t indicatorCounter = 0;
-
 /// \brief
 ///    Toggles the indicator led state.
 void toggleIndicator() {
@@ -306,11 +304,16 @@ int main() {
 
     initializeMotors();
 
+    uint16_t indicatorCounter = 0;
+
     while (true) {
-        if (indicatorCounter % INDICATOR_HALF_PERIOD == 0) {
+        if (indicatorCounter == INDICATOR_HALF_PERIOD) {
             toggleIndicator();
+            indicatorCounter == 0;
         }
-        indicatorCounter++;
+        else {
+            indicatorCounter++;
+        }
 
         bool switchState[6];
         readSwitches(switchState);
@@ -321,5 +324,4 @@ int main() {
 
         _delay_ms(LOOP_DELAY);
     }
-
 }
