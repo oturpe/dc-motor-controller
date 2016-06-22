@@ -309,7 +309,7 @@ int main() {
     while (true) {
         if (indicatorCounter == INDICATOR_HALF_PERIOD) {
             toggleIndicator();
-            indicatorCounter == 0;
+            indicatorCounter = 0;
         }
         else {
             indicatorCounter++;
